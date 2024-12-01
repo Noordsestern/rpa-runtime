@@ -20,12 +20,12 @@ To connect your task worker to the Camunda Cloud, you must set the following env
 
 ### Installation
 
-### On Windows
+### ~~On Windows~~
 
-- Clone or download the repository
-- Run `setup.ps1`. If you can not run the file, set your Execution policy to allow remote scripts with `Set-ExecutionPolicy RemoteSigned`
-- Add your credentials to `.env`
-- run `start.ps1`
+- ~~Clone or download the repository~~
+- ~~Run `setup.ps1`. If you can not run the file, set your Execution policy to allow remote scripts with `Set-ExecutionPolicy RemoteSigned`~~
+- ~~Add your credentials to `.env`~~
+- ~~run `start.ps1`~~
 
 ### Running with python
 
@@ -35,17 +35,19 @@ To install the required dependencies for the Camunda RPA Runtime, run the follow
 
 Before you begin, ensure you have the following prerequisites installed on your system:
 
-- Python 3.10 or higher
-- pip 24 or higher
+- ~~Python 3.10 or higher~~
+- ~~pip 24 or higher~~
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
+Install dependencies in local folder:
 ```sh
-pip install --no-cache-dir -r requirements.txt --no-deps
+uv venv .venv
 ```
-This will install all the necessary Python packages as specified in the requirements.txt file.
+This will install all the necessary Python packages as specified in the ~~requirements.txt~~ `pyproject.toml` file.
 
-##### Windows
+##### ~~Windows~~
 
-On windows, you might need to update pywin32:
+~~On windows, you might need to update pywin32:~~
 
 ```sh
 pip install --upgrade pywin32
